@@ -97,9 +97,13 @@ void printSerialPortsAvialible(){
 
 void setup () {
   
-  size(1500, 600);   
+  size(1000, 600);   
   background(0); 
   
+  
+  textSize(26);
+  
+
   data  = new Line();
   data2 = new Line();
   
@@ -153,7 +157,26 @@ void serialGetData(){
 }
 
 void draw () {
+  
+  text("1/2", width / 20,(height/2));
+  
+  line(0, height/2, width / 20, height/2);
+  
+  text("1/4", width / 20,(height/4));
+  
+  line(0, height/4, width / 20, height/4);
+  
+  text("3/4", width / 20,((height/4)+(height/2)));
+  
+  line(0, ((height/4)+(height/2)), width / 20, ((height/4)+(height/2)));
+  
+  
   serialGetData();
+  
   data.Draw(dataNumber[0],255, 1);
+  
   data2.Draw(dataNumber[6],#00ff00, 1);
+  
+  
+ 
 }
