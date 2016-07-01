@@ -1,5 +1,7 @@
 /*
-Made by WiseMokey all internet cred reserved
+Made by WiseMokey @ 22:55 on 30-6-2016
+all internet cred reserved
+
 this program graphs csv data that comes from a arduino's serial port.
 ex
 123,144, 445,66,44
