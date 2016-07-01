@@ -1,3 +1,14 @@
+/*
+Made by WiseMokey all internet cred reserved
+this program graphs csv data that comes from a arduino's serial port.
+ex
+123,144, 445,66,44
+
+gets turned into a graph
+
+default COMPORT is 0
+but change it if its not working to 1
+*/
 import processing.serial.*;
 
 int COMPORT = 1;
@@ -172,7 +183,7 @@ void draw () {
   
   
   serialGetData();
-  
+            
   data.Draw(dataNumber[0],255, 1);
   
   data2.Draw(dataNumber[6],#00ff00, 1);
